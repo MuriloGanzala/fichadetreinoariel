@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha de Treino</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Ficha de Treino - Academia</h1>
+    <div id="input-container">
+      <input type="text" id="nome-input" placeholder="Nome do Aluno">
+      <input type="text" id="exercicio-input" placeholder="Exercício (ex: Supino)">
+      <input type="text" id="series-input" placeholder="Séries e Repetições (ex: 3x12)">
+      <button id="add-btn">Adicionar</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Aluno</th>
+          <th>Exercício</th>
+          <th>Séries</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+    <div id="update-container">
+      <input type="text" id="update-nome">
+      <input type="text" id="update-exercicio">
+      <input type="text" id="update-series">
+      <button id="update-btn">Atualizar</button>
+      <button id="cancel-btn">Cancelar</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
